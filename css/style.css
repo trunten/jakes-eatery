@@ -1,0 +1,162 @@
+.logo {
+    background: white;
+    height: 230px;
+    background-image: url("../images/jakes-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Navigation styles */
+.nav {
+    display:flex;
+    background-color: black;
+    padding: 20px;
+}
+
+.left, .center, .right {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+}
+
+.center a {
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.center a:hover {
+    color: skyblue;
+}
+
+button {
+  align-items: center;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: baseline;
+  width: auto;
+}
+
+button:hover,
+button:focus {
+  box-shadow: rgba(255, 255, 255, 0.4) 0 4px 12px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.right button {
+    background-color: yellow;
+}
+
+.left button {
+    background-color: skyblue;
+}
+
+/* Column styles */
+.column {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.meal1, .meal2, .meal3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.meal1 {
+    margin-top: 20px; 
+    background-image: url("../images/steak.png");
+}
+
+.meal2 {
+    background-image: url("../images/soup.png");
+}
+
+.meal3 {
+    background-image: url("../images/cheesecake.png");
+}
+
+.text {
+    background: rgb(0,0,0,0.7);
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+
+p {
+    columns: rgb(255,255,255,0.7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    flex-direction: row; /* not needed but being explicit */
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer a {
+    margin: 30px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;;
+}
+
+.fb {
+    color: lightblue
+}
+
+.tw {
+    color: yellow;
+}
+
+.ig {
+    color: red;
+}
